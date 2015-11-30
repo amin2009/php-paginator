@@ -1,6 +1,6 @@
 <?php
 
-namespace JasonGrimes;
+//namespace JasonGrimes;
 
 class Paginator
 {
@@ -43,7 +43,7 @@ class Paginator
     public function setMaxPagesToShow($maxPagesToShow)
     {
         if ($maxPagesToShow < 3) {
-            throw new \InvalidArgumentException('maxPagesToShow cannot be less than 3.');
+            throw new InvalidArgumentException('maxPagesToShow cannot be less than 3.');
         }
         $this->maxPagesToShow = $maxPagesToShow;
     }
